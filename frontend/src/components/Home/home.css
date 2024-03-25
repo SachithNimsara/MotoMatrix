@@ -1,0 +1,95 @@
+.homePage-container{
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    background: #f1eff2;
+}
+.homePage-row{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.engine-state-img{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.error{
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 3rem;
+}
+.Error-massage{
+    text-align: center;
+    color: red;
+}
+
+.column, .engine-status{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Error-massage span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.no-error{
+    font-size: 1.2rem;
+    color: rgb(51, 130, 51);
+    font-weight: bold;
+}
+.current-treads{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.treads{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.frow-column{
+    display: flex;
+    gap: 2rem;
+}
+.connect-btn{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background: #D9D9D9;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.green-dot{
+    width: 1rem;
+    height: 1rem;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.red-dot{
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    border-radius: 50%;
+}
+.homePage-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+.right-row{
+    display: flex;
+    gap: 1.5rem;
+}
+.car{
+    width: 4rem;
+}
+.right-row{
+    margin-top: 1rem;
+}
