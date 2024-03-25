@@ -47,7 +47,8 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="homePage-row">
-                
+                <button onClick={setConnect(!connect)}>Connection</button>
+                <button onClick={setError(!iserror)}>Error</button>
             </div>
         </div>
     )
