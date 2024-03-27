@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import './navbar.css'
+import './navbar.css';
 
-import dropdown from '../../assets/dropdown.png'
+import dropdown from '../../assets/dropdown.png';
 import logo from '../../assets/MotomatriX_Logo.png';
 
 const Navbar = () => {
@@ -10,13 +10,17 @@ const Navbar = () => {
     const [isRotated, setRotated] = useState(false);
 
     const handleMouseEnter = () => {
-        setDropdownVisible(true);
-        setRotated(true);
+        if (!isDropdownVisible) {
+            setDropdownVisible(true);
+            setRotated(true);
+        }
     };
     
     const handleMouseLeave = () => {
-        setDropdownVisible(false);
-        setRotated(false);
+        if (isDropdownVisible) {
+            setDropdownVisible(false);
+            setRotated(false);
+        }
     };
 
     return (
@@ -28,13 +32,11 @@ const Navbar = () => {
                         <li><Link>Engine Data</Link></li>
                         <li className="dropDown-container">
                             <Link>Engine Analysis</Link>
-                            <span id="dropdown">
+                            <span id="dropdown" onMouseEnter={handleMouseEnter}>
                                 <img
                                     src={dropdown}
                                     alt="dropdown"
                                     className={isRotated ? "rotate" : ""}
-                                    onMouseEnter={handleMouseEnter}
-                                    
                                 />
                             </span>
                         </li>
@@ -42,18 +44,17 @@ const Navbar = () => {
                         <li><Link>Map View</Link></li>
                         <li><Link>Engine Error</Link></li>
                     </ul>
-                    
                 </div>
             </div>
             <section className={isDropdownVisible ? "display" : ""} onMouseLeave={handleMouseLeave}>
                 <ul id="dropDown-menu">
-                    <li>Montly</li>
+                    <li>Monthly</li>
                     <li>Weekly</li>
                     <li>Daily</li>
                 </ul>
             </section>
         </div>
-    )
-}
+    );
+};
 
 export default Navbar;
