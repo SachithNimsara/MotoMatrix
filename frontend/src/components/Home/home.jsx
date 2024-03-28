@@ -6,7 +6,11 @@ import error from '../../assets/attention-triangle.png';
 import no_error from '../../assets/Eo_circle_green_checkmark.svg.png';
 import sync from '../../assets/directory_sync_FILL0_wght400_GRAD0_opsz24 1.png';
 import car from '../../assets/directions_car_FILL0_wght400_GRAD0_opsz24 1.png';
-
+import map from '../../assets/Map_view 1.png';
+import real_time from '../../assets/Real_time 1.png';
+import Error_preventer from '../../assets/event.png';
+import engine_fault from '../../assets/large_check-engine 1.png';
+import analysis from '../../assets/pngtree-data-rise-analysis-graph-illustration-png-image_4639368 1.png';
 
 const HomePage = () => {
 
@@ -53,9 +57,30 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="homePage-row">
-                <button onClick={toggleConnect}>Connection</button>
-                <button onClick={toggleError}>Error</button>
+                <div className="feature-container">
+                    <img src={map} alt="map" />
+                    <p>Map view</p>
+                </div>
+                <div className="feature-container">
+                    <img src={real_time} alt="real time" />
+                    <p>RealTime Information</p>
+                </div>
+                <div className="feature-container">
+                    <img src={Error_preventer} alt="error" />
+                    <p>Error Preventer</p>
+                </div>
+                <div className="feature-container">
+                    <img src={engine_fault} alt="fault" />
+                    <p>Engine Fault</p>
+                </div>
+                <div className="feature-container">
+                    <img src={analysis} alt="an" />
+                    <p>Analysis</p>
+                </div>
+                
             </div>
+            <button className="hide" onClick={toggleConnect}></button>
+            <button className="hide" onClick={toggleError}></button>
         </div>
     )
 }

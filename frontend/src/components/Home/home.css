@@ -1,7 +1,10 @@
 .homePage-container{
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
     width: 100vw;
     background: #f1eff2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .homePage-row{
     width: 80%;
@@ -92,4 +95,32 @@
 }
 .right-row{
     margin-top: 1rem;
+}
+.feature-container{
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    height: 10rem;
+    border-radius: 1rem;
+    background: #e9e8e8;
+    cursor: pointer;
+
+    img{
+        width: 100%;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+.feature-container {
+    transition: transform 0.4s ease-in; 
+}
+
+.feature-container:hover {
+    transform:  scale(1.1);
+}
+.hide{
+    display: none;
 }
