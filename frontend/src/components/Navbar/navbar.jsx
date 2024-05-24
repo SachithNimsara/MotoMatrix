@@ -31,7 +31,7 @@ const Navbar = () => {
                     <ul>
                         <li><Link>Engine Data</Link></li>
                         <li className="dropDown-container">
-                            <Link>Engine Analysis</Link>
+                            <Link to='/chart'>Engine Analysis</Link>
                             <span id="dropdown" onMouseEnter={handleMouseEnter}>
                                 <img
                                     src={dropdown}

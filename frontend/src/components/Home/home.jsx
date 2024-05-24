@@ -33,7 +33,8 @@ const HomePage = () => {
                         <h1>Engine Status</h1>
                         <div className="engine-state-img">
                             <img src={engine_status} alt="engine status" className="engine" />
-                            {iserror ? <img src={error} alt="error " className="error" /> : <img src={no_error} alt="no error " className="error" />}
+                            {iserror ? <img src={error} alt="error " className="error" /> 
+                            :<img src={no_error} alt="no error " className="error" />}
                         </div>
                         {iserror ? <p className="Error-massage"><span>Urgent Alert!</span> <br />please check your <br /> Engine soon</p> : <p className="no-error">No engine faults</p>}
                     </div>
@@ -56,7 +57,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className="homePage-row">
+            <div className="homePage-row bottom">
                 <div className="feature-container">
                     <img src={map} alt="map" />
                     <p>Map view</p>
