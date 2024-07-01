@@ -2,7 +2,7 @@
     width: 100vw;
     height: 5rem;
     text-decoration: none;
-    background-color: #f8f8ff;
+    background-color: #8e8f8f;
 }
 .nav-container{
     width: 90%;
@@ -71,8 +71,12 @@ section{
     top: 5rem;
 }
 a:hover{
-    color: rgba(0,0,0,0.6);
+    color: rgba(251, 11, 11, 0.6);
 }
 .logo{
     width: 6rem;
+}
+.nav-links{
+    font-weight:400;
+    font-size: large;
 }

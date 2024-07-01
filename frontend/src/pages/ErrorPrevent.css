@@ -1,0 +1,55 @@
+.error-prevent {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.error-prevent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.warning {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.engine-icon {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.warning-title {
+  font-size: 1.2em;
+  color: red;
+}
+
+.issue {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.issue-section {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.issue-section h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.issue-section p {
+  margin: 10px 0 0 0;
+}
+
+.expand-symbol {
+  font-size: 1.2em;
+}
